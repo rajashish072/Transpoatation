@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title> Create  New Account</title>
+  <style>
+  body {
+     font-family: sans-serif;
+     background: linear-gradient(#141e30, #243b55);
+      }
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  padding: 60px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+  h1 {
+           color: #CCCCCC;
+             text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+       }
+.name{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: green;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+   }
+
+
+ .sign
+     {
+     width:200px;
+     height: 30px;
+     font-size: 0.6cm;
+     margin-top: 20px;
+     margin-left: 00px;
+     border: px;
+     border-radius: 30px;
+     background:green;
+   }
+    .sign1
+     {
+     width:210px;
+     height: 80px;
+     font-size: 0.6cm;
+     margin-top: 20px;
+     margin-left: 00px;
+     border: px;
+     border-radius: 30px;
+     background:CRIMSON;
+   }
+   .sign:hover {
+             background: #03e9f4;
+              color: #fff;
+               border-radius: 5px;
+                box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+             }
+
+
+
+   </style>
+</head>
+<body>
+<form method="post" action="Transport">
+<div class="container">
+
+  
+    <h1> TRANSPOTATION</h1>
+
+    <br>
+    <select class="name" id="month" name="month">
+    <option value="">....month....</option>
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+</select>
+    
+    <input type="text" name="ammount" class="name" placeholder="ENTER AMMOUNT"/>
+    <br>
+    
+    <button class="sign"> Submit </button>
+    <br>
+    </form>
+    
+    <form action="Model1" method="post">
+    
+     <button class="sign1" name="btn" value="insert"> Insert Calculation  </button>
+      
+    </form>
+    <form action="Model2" method="post">
+    
+     <button class="sign1" name="btn1" value="YNP"> YERLY NET PROFIT </button>
+     <button class="sign1" name="btn1" value="TC"> Transpotation Charge 2%</button>
+     <button class="sign1" name="btn1" value="MMP"> Minimum Month Profit</button>
+      
+    </form>
+   
+  
+</div>
+</body>
+</html>
